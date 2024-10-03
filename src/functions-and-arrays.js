@@ -28,7 +28,7 @@ function findLongestWord (wordsArr) {
   let longestWord = wordsArr[0]
   for (let i = 0; i < wordsArr.length; i++) {
     if (longestWord.length < wordsArr[i].length) {
-      return (longestWord = wordsArr[i])
+      longestWord = wordsArr[i]
     }
   }
   return longestWord
@@ -43,8 +43,9 @@ function sumNumbers (nums) {
     return (sum = 0)
   }
   for (let i = 0; i < nums.length; i++) {
-    return (sum += nums[i])
+    sum += nums[i]
   }
+  return sum
 }
 
 // Iteration 4 | Numbers Average
@@ -79,6 +80,6 @@ function doesWordExist (arr, aim) {
     if (arr[i] === aim) {
       return true
     }
-    return false
   }
+  return false
 }
